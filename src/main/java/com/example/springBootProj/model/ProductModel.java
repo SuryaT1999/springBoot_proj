@@ -1,5 +1,6 @@
 package com.example.springBootProj.model;
 
+
 public class ProductModel {
 	
 	private int productCode;
@@ -7,6 +8,8 @@ public class ProductModel {
 	private String productName;
 	
 	private String productDesc;
+	
+	private String productCatagery;
 	
 	private Boolean productAvailability;
 	
@@ -50,6 +53,14 @@ public class ProductModel {
 
 	public void setProductPrice(int productPrice) {
 		this.productPrice = productPrice;
+	}
+
+	public String getProductCatagery() {
+		return productCatagery;
+	}
+
+	public void setProductCatagery(String productCatagery) {
+		this.productCatagery = productCatagery;
 	}
 	
 	

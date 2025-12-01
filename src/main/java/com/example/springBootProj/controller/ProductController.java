@@ -12,12 +12,13 @@ import com.example.springBootProj.model.ProductModel;
 @RestController
 public class ProductController {
 	
-	@Autowired
-	ProductModel productObj = new ProductModel();
-	
+
+
 	
 	@GetMapping("/getProductList")
 	public List<ProductModel> getProductList() {
+		
+		ProductModel productObj = new ProductModel();
 		
 		List<ProductModel> productList = new ArrayList<ProductModel>();
 		
